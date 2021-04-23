@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import s from './App.module.css';
 
 const testStr =
   '-- --- == === != !== =!= =:= =/= <= >= && &&& &= ++ +++ *** ;; !! ?? ?: ?. ?= <: :< :> >: <> <<< >>> << >> || -| _|_ |- ||- |= ||= ## ### #### #{ #[ ]# #( #? #_ #_( #: #! #= ^= <$> <$ $> <+> <+ +> <*> <* *> </ </> /> <!-- <#-- --> -> ->> <<- <- <=< =<< <<= <== <=> <==> ==> => =>> >=> >>= >>- >- >-- -< -<< >-> <-< <-| <=| |=> |-> <-> <~~ <~ <~> ~~ ~~> ~> ~- -~ ~@ [||] |] [| |} {| [< >] |> <| ||> <|| |||> <||| <|> ... .. .= .- ..< .? :: ::: := ::= :? :?> // /// /* */ /= //= /== @_ __';
@@ -12,8 +12,8 @@ export const App = () => {
   }, [count, setCount]);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={s.app}>
+      <header className={s.header}>
         {count}
         <p>{testStr}</p>
         <code>{testStr}</code>
