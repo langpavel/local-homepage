@@ -1,0 +1,8 @@
+{
+  "name": "local-homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:langpavel/local-homepage.git",
+  "author": "Pavel Lang <langpavel@phpskelet.org>",
+  "license": "MIT"
+}
