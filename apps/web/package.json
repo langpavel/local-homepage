@@ -1,0 +1,36 @@
+{
+  "name": "@langpavel/homepage-web",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:langpavel/local-homepage.git",
+  "author": "Pavel Lang <langpavel@phpskelet.org>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "@snowpack/plugin-sass": "^1.4.0",
+    "@snowpack/plugin-typescript": "^1.2.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/snowpack-env": "^2.3.2",
+    "husky": "^6.0.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "snowpack": "3.3.5",
+    "typescript": "^4.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,json,md,html}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "format": "prettier --write \"{src,public}/**/*.{js,ts,tsx,json,md,html}\""
+  }
+}
